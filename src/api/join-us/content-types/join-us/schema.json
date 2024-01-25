@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "join_uses",
+  "info": {
+    "singularName": "join-us",
+    "pluralName": "join-uses",
+    "displayName": "Join-us"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "joinus_title": {
+      "type": "string"
+    },
+    "joinus_detail": {
+      "type": "richtext"
+    }
+  }
+}

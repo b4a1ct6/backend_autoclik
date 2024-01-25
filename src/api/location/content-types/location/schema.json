@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "locations",
+  "info": {
+    "singularName": "location",
+    "pluralName": "locations",
+    "displayName": "location",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "location_name": {
+      "type": "string"
+    },
+    "location_detail": {
+      "type": "text"
+    },
+    "location_nearby": {
+      "type": "string"
+    },
+    "location_map": {
+      "type": "text"
+    },
+    "location_img": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "location_province": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::location-province.location-province",
+      "inversedBy": "locations"
+    },
+    "phone": {
+      "type": "string"
+    }
+  }
+}

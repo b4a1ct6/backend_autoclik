@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "product_lubeoil_fluid_types",
+  "info": {
+    "singularName": "product-lubeoil-fluid-type",
+    "pluralName": "product-lubeoil-fluid-types",
+    "displayName": "product-lubeoil_fluid_type",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fluid_type_name": {
+      "type": "string"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product",
+      "mappedBy": "product_lubeoil_fluid_type"
+    }
+  }
+}

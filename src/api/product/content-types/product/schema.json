@@ -1,0 +1,104 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "product_name": {
+      "type": "string"
+    },
+    "product_detail": {
+      "type": "text"
+    },
+    "product_img": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "product_description": {
+      "type": "richtext"
+    },
+    "product_price": {
+      "type": "float"
+    },
+    "product_brand": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::product-brand.product-brand",
+      "inversedBy": "products"
+    },
+    "product_diameter": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::product-diameter.product-diameter",
+      "inversedBy": "products"
+    },
+    "product_ratio": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::product-ratio.product-ratio",
+      "inversedBy": "products"
+    },
+    "product_typesofengineoil": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::product-typesofengineoil.product-typesofengineoil",
+      "inversedBy": "products"
+    },
+    "product_width": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::product-width.product-width",
+      "inversedBy": "products"
+    },
+    "product_content_img": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "product_lubeoil_fluid_type": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::product-lubeoil-fluid-type.product-lubeoil-fluid-type",
+      "inversedBy": "products"
+    },
+    "product_shockuptype": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::product-shockuptype.product-shockuptype",
+      "inversedBy": "products"
+    },
+    "product_braketype": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::product-braketype.product-braketype",
+      "inversedBy": "products"
+    },
+    "product_amp": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::product-amp.product-amp",
+      "inversedBy": "products"
+    }
+  }
+}

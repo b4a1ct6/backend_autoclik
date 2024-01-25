@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "warranties",
+  "info": {
+    "singularName": "warranty",
+    "pluralName": "warranties",
+    "displayName": "Warranty",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "warranty_detail_blog": {
+      "type": "richtext"
+    }
+  }
+}
