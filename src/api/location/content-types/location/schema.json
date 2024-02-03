@@ -43,6 +43,9 @@
     },
     "phone": {
       "type": "string"
+    },
+    "location_embed": {
+      "type": "text"
     }
   }
 }
